@@ -1,0 +1,184 @@
+:root {
+    --theme-text-primary-on-background: hsl(256, 46%, 11%);
+
+    /* colors */
+	--theme-background: hsl(200, 12%, 95%);
+	
+	--theme-surface: hsl(0, 0%, 100%);
+	--theme-on-surface: hsl(224, 34%, 26%);
+	
+	--theme-primary: hsl(215, 100%, 30%);
+	--theme-on-primary: hsl(0, 0%, 100%);
+	
+	--theme-accent-1: hsl(36, 66%, 92%);
+	--theme-on-accent-1: hsl(224, 34%, 26%);
+	
+	--theme-accent-2: hsl(337, 63%, 48%);
+	--theme-on-accent-2: hsl(55, 100%, 77%);
+
+    /* typo */
+	--typography-font-primary: 'Nunito Sans Light';
+    --typography-font-primary-bold: 'Nunito Sans Black';
+    --typography-font-secondary: 'Ubuntu Light';
+    --typography-font-secondary-bold: 'Ubuntu Bold';
+
+    /* sizes */
+    --size-border-radius: 10px;
+    --size-border-radius--large: 1vw;
+}
+
+/* basic styles */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+*:focus-visible {
+    border: none;
+    outline: 2px solid var(--theme-accent-2);
+    outline-offset: 6px;
+    border-radius: 5px;
+}
+
+html, body {
+	background-color: var(--theme-background);
+	font-size: 12px;
+}
+
+body {
+	color: var(--theme-text-primary-on-background);
+	margin: 0;
+    padding: 0;
+}
+
+ul,ol,li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    line-height: inherit;
+    font-size: inherit;
+}
+
+a[href^=tel] {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.list--flex {
+    display: flex;
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.list-item, .list-item--active, .nav-list-item--mobile, .list-item__text, .list-item__icon {
+    display: flex;
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: -webkit-flex;
+    background-color: inherit;
+
+    height: 24px; /* preffered size */
+ 
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+
+    text-rendering: optimizeLegibility;
+
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.list-item__icon {
+    padding: 0px 5px;
+} 
+
+/* fonts */
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    cursor: pointer;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 40;
+}
+
+.fa:hover {
+    color: var(--theme-accent-2);
+}
+
+@font-face {
+    font-family: 'Nunito Sans Light';
+    src: url('./fonts/Nunito_Sans/NunitoSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+}
+
+@font-face {
+    font-family: 'Nunito Sans Black';
+    src: url('./fonts/Nunito_Sans/NunitoSans-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+}
+
+@font-face {
+    font-family: 'Ubuntu Bold';
+    src: url('./fonts/Ubuntu/Ubuntu-Bold.ttf') format('truetype');
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+}
+
+@font-face {
+    font-family: 'Ubuntu Light';
+    src: url('./fonts/Ubuntu/Ubuntu-Light.ttf') format('truetype');
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+}

@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="template.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Article</title>
+
+    <script>
+      function handleEnter(e){
+          var keycode = (e.keyCode ? e.keyCode : e.which);
+          if (keycode == '13' || keycode == '32') {
+              document.activeElement.click();
+          }
+      }
+  </script>
+</head>
+<body onkeypress="handleEnter(event)">
+    <script src="script.js" defer></script>
+    <header class="nav">
+      <div class="nav-container">
+          <div class="logo" tabindex="0">
+              <div class="logo-media"></div>
+              <div class="logo-text">SiteName</div>
+          </div>
+          <span class="material-icons nav-menu" tabindex="0">menu</span>
+          <div class="nav-list--large">
+              <ul class="nav-list-container list--flex">
+                  <li class="nav-list-item list-item--active">
+                      <span class="list-item__icon material-symbols-rounded">home</span>
+                      <a class="list-item__text" href="#">Home</a>
+                  </li>
+                  <li class="nav-list-item list-item">
+                      <span class="list-item__icon material-symbols-rounded">person</span>
+                      <a class="list-item__text" href="#">About</a>
+                  </li>
+                  <li class="nav-list-item list-item">
+                      <span class="list-item__icon material-symbols-rounded">call</span>
+                      <a class="list-item__text" href="#">Contact</a>
+                  </li>
+              </ul>
+          </div>
+          <button class="main-button nav-button" tabindex="0">
+              <span class="main-button-text">Explore</span>
+          </button>
+      </div>
+      <aside class="nav-banner">
+          <span class="nav-banner-text">See this new Banner !!! Also check out my Instagram : Jonas.kbr</span>
+      </aside>
+    </header>
+    <aside class="nav-list--mobile">
+        <ul class="nav-list-container">
+            <li class="nav-list-item--mobile list-item--active">
+                <span class="list-item__icon material-symbols-rounded">home</span>
+                <a class="list-item__text" href="#">Home</a>
+            </li>
+            <li class="nav-list-item--mobile list-item">
+                <span class="list-item__icon material-symbols-rounded">person</span>
+                <a class="list-item__text" href="#">About</a>
+            </li>
+            <li class="nav-list-item--mobile list-item">
+                <span class="list-item__icon material-symbols-rounded">call</span>
+                <a class="list-item__text" href="#">Contact</a>
+            </li>
+            <li class="nav-list-item--mobile">
+                <button class="main-button">
+                    <span class="main-button-text">Explore</span>
+                </button>
+            </li>
+        </ul>
+    </aside>
+    <main class="page">
+      <section class="main-section01">
+        <div class="main-toc--static">
+          <div class="main-toc-container">
+            <div class="main-toc-heading">Table of Contents</div>
+            <ul class="main-list--inline main-toc-list">
+              <li class="main-toc-list-item list-item">Heading 1</li>
+              <li class="main-toc-list-item list-item">Heading 2</li>
+              <li class="main-toc-list-item list-item">Heading 3</li>
+              <li class="main-toc-list-item list-item">Heading 4</li>
+              <li class="main-toc-list-item list-item">Heading 5</li>
+            </ul>
+          </div>
+      </div>
+      </section>
+    </main>
+</body>
+</html>
